@@ -1,0 +1,38 @@
+.game {
+     color: #333;
+}
+
+.drag-and-drop {
+     margin-top: 50px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.score {
+     margin-bottom: 20px;
+     font-size: 18px;
+     font-weight: bold;
+}
+
+.droppable {
+     width: 150px;
+     height: 150px;
+     border: 2px solid #333;
+     margin: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #fff;
+}
+
+
+.house-part-draggable {
+     width: 60px;
+     height: 60px;
+     margin: 10px;
+}
+
+#play-again-btn {
+     margin-top: 20px;
+}
