@@ -22,3 +22,8 @@ body {
      max-width: 1536px;
      margin: 0 auto;
 }
+
+i {
+     text-decoration: none;
+     color: black;
+}

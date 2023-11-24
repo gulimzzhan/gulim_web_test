@@ -7,8 +7,11 @@ const totalSpan = scoreSection.querySelector(".total");
 const playAgainBtn = document.querySelector("#play-again-btn");
 playAgainBtn.style.display = "none";
 
+
 let draggableElements;
 let droppableElements;
+
+
 
 initiateGame();
 
@@ -27,7 +30,7 @@ function initiateGame() {
 }
 
 function dragStart(event) {
-     event.dataTransfer.setData("text/plain", event.target.id);
+     event.dataTransfer.setData("text", event.target.id);
 }
 
 function dragOver(event) {
@@ -36,7 +39,7 @@ function dragOver(event) {
 
 function drop(event) {
      event.preventDefault();
-     const draggableElementId = event.dataTransfer.getData("text/plain");
+     const draggableElementId = event.dataTransfer.getData("text");
      const droppableElementFlower = event.target.getAttribute("data-flower");
      const isCorrectMatching = draggableElementId === droppableElementFlower;
      total++;

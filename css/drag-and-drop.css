@@ -1,38 +1,41 @@
-.game {
-     color: #333;
-}
-
 .drag-and-drop {
-     margin-top: 50px;
+     font-family: 'Poppins', Times, serif;
      display: flex;
      flex-direction: column;
      align-items: center;
 }
 
 .score {
-     margin-bottom: 20px;
-     font-size: 18px;
-     font-weight: bold;
+     text-align: center;
+     font-size: 1.5rem;
+     margin: 1rem 0;
 }
 
 .droppable {
-     width: 150px;
-     height: 150px;
-     border: 2px solid #333;
+     width: 100px;
+     height: 130px;
+     border: 2px dashed #ccc;
+     margin: 5px;
+}
+
+.jewelry-draggable {
+     width: 100px;
+     height: 130px;
      margin: 10px;
      display: flex;
-     align-items: center;
      justify-content: center;
-     background-color: #fff;
+     align-items: center;
 }
 
-
-.house-part-draggable {
-     width: 60px;
-     height: 60px;
-     margin: 10px;
+.draggable-items {
+     display: flex;
+     justify-content: center;
 }
 
-#play-again-btn {
-     margin-top: 20px;
+.quiz-container {
+     margin: 20px;
+}
+
+.form-check {
+     margin: 20px;
 }
