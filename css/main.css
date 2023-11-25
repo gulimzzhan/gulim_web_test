@@ -53,6 +53,15 @@
      background: #757575;
      border: none;
      margin-bottom: 196px;
+     transition: 0.3s;
+}
+
+#main-btn:hover {
+     color: #000;
+     background-color:#959595;
+     transition: 0.3s;
+     transform: scale(105%);
+     border: 1px solid #000;
 }
 
 

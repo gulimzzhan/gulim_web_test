@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 let correct = 0;
 let total = 0;
 
@@ -16,7 +17,7 @@ let droppableElements;
 initiateGame();
 
 function initiateGame() {
-     draggableElements = document.querySelectorAll(".jewelry-draggable");
+     draggableElements = document.querySelectorAll(".house-part-draggable");
      droppableElements = document.querySelectorAll(".droppable");
 
      draggableElements.forEach(elem => {
@@ -40,8 +41,8 @@ function dragOver(event) {
 function drop(event) {
      event.preventDefault();
      const draggableElementId = event.dataTransfer.getData("text");
-     const droppableElementFlower = event.target.getAttribute("data-flower");
-     const isCorrectMatching = draggableElementId === droppableElementFlower;
+     const droppableElementHouse = event.target.getAttribute("data-house-part");
+     const isCorrectMatching = draggableElementId === droppableElementHouse;
      total++;
 
      if (isCorrectMatching) {
@@ -70,4 +71,5 @@ playAgainBtn.addEventListener("click", () => {
      droppableElements.forEach(elem => {
           elem.style.backgroundImage = "";
      });
+});
 });

@@ -51,8 +51,16 @@
      padding: 0 30px;
 }
 
-.card-link a {
+
+
+.card-link i {
      padding: 0 30px 30px 30px;
+     transition: 3.5s;
+}
+
+.card-link i:hover {
+     transform: translateX(200%);
+     transition: 2.5s;
 }
 
 @media (max-width: 1200px) {
